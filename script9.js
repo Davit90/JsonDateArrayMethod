@@ -16,8 +16,16 @@
 // console.log(sum(1, 2));
 // console.log(sum(1, 2, 3));
 
-function sum(x, y, z) {
-  return x + y + z;
-}
-const numbers = [1, 2, 3];
-console.log(sum(...numbers));
+// function sum(x, y, z) {
+//   return x + y + z;
+// }
+// const numbers = [1, 2, 3];
+// console.log(sum(...numbers));
+
+let a = 3;
+let b = 6;
+let c = a;
+a = b;
+b = c;
+console.log(a); //6
+console.log(b); //3

@@ -22,10 +22,27 @@
 // const numbers = [1, 2, 3];
 // console.log(sum(...numbers));
 
-let a = 3;
-let b = 6;
-let c = a;
-a = b;
-b = c;
-console.log(a); //6
-console.log(b); //3
+// let a = 3;
+// let b = 6;
+// let c = a;
+// a = b;
+// b = c;
+// console.log(a); //6
+// console.log(b); //3
+
+function sortBy(arr, str) {
+  if (str === "Asc") {
+    return arr.sort(function (a, b) {
+      return a - b;
+    });
+  } else if (str === "Desc") {
+    return arr.sort(function (a, b) {
+      return b - a;
+    });
+  } else {
+    return arr;
+  }
+}
+console.log(sortBy([4, 3, 2, 1], "Asc"));
+console.log(sortBy([7, 8, 11, 66]));
+console.log(sortBy([7, 8, 11, 66], "Desc"));
